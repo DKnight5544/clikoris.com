@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Open Graph Meta Tags for Facebook -->
+    <meta property="og:title" content="clikoris.com">
+    <meta property="og:description" content="Funny, Memorable, Short URLs">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="https://www.clikoris.com">
+
+    <title>clikoris.com</title>
+
+    <!-- Add your CSS file here -->
+    <link rel="stylesheet" href="index.css">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script>
+
+        function begin() {
+            let name = getName() + ".clikoris.com";
+            document.getElementById("FromDiv").innerHTML = name;
+
+            let msg = document.getElementById("EmailMessage");
+            let href = msg.href;
+            msg.href = href.replace("{Refby}", name);
+
+        }
+
+        function getName() {
+            let queryString = window.location.search;
+            let urlParams = new URLSearchParams(queryString).toString();
+            return urlParams.replace("=","");
+        }
+
+    </script>
+
+</head>
+<body onload="begin();">
+    <div class="main-container">
+
+        <p class="key-value">
+            <span class="key">From: </span>
+            <span id="FromDiv" class="value"></span>
+        </p>
+
+        <p class="key-value">
+            <span class="key">To: </span>
+            <span class="value">you@interwebs.com</span>
+        </p>
+
+        <p class="key-value">
+            <span class="key">Subject: </span>
+            <span class="value">OMG! You found my clikoris.com</span>
+        </p>
+
+        <hr />
+
+        <p class="message">
+            I am SO glad you finally found it!
+        </p>
+
+        <p class="message">
+            Welcome to clikoris.com, the funniest
+            most memorable, most clickable, domain
+            name on the interwebs!
+        </p>
+
+        <p class="message">
+            I can set you up with an irresistable shortcut to anywhere on the
+            web for only $50! Check out these hilarious ideas:
+            <ul>
+                <li>throbbing.clikoris.com</li>
+                <li>moist.clikoris.com</li>
+                <li>tingly.clikoris.com</li>
+                <li>hiding.clikoris.com</li>
+            </ul>
+        </p>
+
+        <p class="message">
+            Or, if you like, you can point your shortcut to this page
+            and earn $25 for each new shortcut you help me sell!
+        </p>
+
+        <p class="message">
+            Let's chat!
+        </p>
+
+        <a id="EmailMessage" href="mailto:dave@mostlyspam.com?subject=I need a shortcut.&body=Desired Shortcut: ???.clikoris.com%0D%0A%0D%0AReferred By: {Refby}">
+            dave@mostlyspam.com
+        </a>
+
+    </div>
+
+</body>
+</html>

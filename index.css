@@ -1,0 +1,60 @@
+﻿/* Mobile-first styles */
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: seashell;
+    font-family:Roboto;
+    font-style:normal;
+    font-weight:400;
+    color:saddlebrown;
+}
+
+
+.main-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding:25px;
+    box-sizing: border-box;
+    font-size:20px;
+}
+
+.key-value{
+    margin-bottom:25px;
+}
+
+.key{
+    font-weight:bold;
+}
+
+.value{
+}
+
+.message {
+    line-height: 30px;
+}
+
+li {
+    line-height: 30px;
+}
+
+.email {
+    background-color: var(--crystals);
+    color: var(--wild);
+}
+
+
+/* Styles for screens that are at least 800px wide */
+@media screen and (min-width: 1024px) {
+
+    .main-container {
+        width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+        border-left: 2px dashed sadlebrown;
+        border-right: 2px dashed sadlebrown;
+    }
+}
