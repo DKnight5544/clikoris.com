@@ -9,7 +9,8 @@ body {
     font-family: Roboto;
     font-style: normal;
     font-weight: 400;
-    color: #6a6d71;
+    /*color: #6a6d71;*/
+    color: black;
 }
 
 
@@ -46,10 +47,14 @@ body {
     position: relative;
 }
 
-.message {
+p {
     line-height: 30px;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+i{
+    color:orangered;
 }
 
 li {
