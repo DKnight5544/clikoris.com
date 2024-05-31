@@ -23,8 +23,11 @@
     <script>
 
         function begin() {
-            let name = getName() + ".clikoris.com";
-            document.getElementById("FromDiv").innerHTML = name;
+            let name = getName();
+
+            let refby = document.getElementById("Refby");
+            let inner = refby.innerHTML;
+            refby.innerHTML = inner.replace("{Refby}", name);
 
             let msg = document.getElementById("EmailMessage");
             let href = msg.href;
@@ -82,9 +85,13 @@
             to me at:
         </p>
 
-        <a id="EmailMessage" href="mailto:dave@mostlyspam.com?subject=I need a shortcut.&body=Desired Shortcut: ???.clikoris.com%0D%0A%0D%0AReferred By: {Refby}">
+        <a id="EmailMessage" href="mailto:dave@mostlyspam.com?subject=New Shortcut.&body=Desired Shortcut: ???.clikoris.com%0D%0A%0D%0AReferred By: {Refby}">
             dave@mostlyspam.com
         </a>
+
+        <p id="Refby">
+            IMPORTANT: Let me know "{Refby}" sent you!
+        </p>
 
         <p>Remember: laughter is just a click away with clikoris.com!</p>
 
