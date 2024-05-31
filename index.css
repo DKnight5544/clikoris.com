@@ -22,6 +22,11 @@ body {
     font-size:20px;
 }
 
+.header-image{
+    width:100%;
+    position:relative;
+}
+
 .key-value{
     margin-bottom:25px;
 }
