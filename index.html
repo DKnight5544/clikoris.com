@@ -30,9 +30,9 @@
             let inner = refby.innerHTML;
             refby.innerHTML = inner.replace("{Refby}", name);
 
-            //let msg = document.getElementById("EmailMessage");
-            //let href = msg.href;
-            //msg.href = href.replace("{Refby}", name);
+            let msg = document.getElementById("EmailTo");
+            let href = msg.href;
+            msg.href = href.replace("{Refby}", name);
 
         }
 
@@ -81,7 +81,7 @@
         </p>
 
         <p>
-            <b>To:</b> click@clikoris.com
+            <b>To:</b> <a id ="EmailTo" href="mailto:click@clikoris.com?subject={Refby}.clikoris.com&body=Is ???.clikoris.com still available?">click@clikoris.com</a>
         </p>
 
         <p id="Refby">
@@ -89,7 +89,7 @@
         </p>
 
         <p>
-            <b>Body:</b> Is <i>{???}</i>.clikoris.com still available?
+            <b>Body:</b> Is <i>???</i>.clikoris.com still available?
         </p>
 
     </div>
