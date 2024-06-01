@@ -48,9 +48,8 @@ body {
 }
 
 .mouse-image {
-    width: 20%;
+    width: 30%;
     display: block;
-    animation: moveImage 5s ease forwards;
     margin-right: 15%;
     float:right;
 }
