@@ -21,21 +21,38 @@ body {
     box-sizing: border-box;
     font-size:20px;
     position:relative;
+    overflow:hidden;
 }
 
 .extra-top-margin{
     margin-top:30px;
 }
 
-.header-image{
-    width:100%;
+/*.header-text {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+    font-size: 40px;
+    border-top:2px solid black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4), 4px 4px 8px rgba(0, 0, 0, 0.3), 6px 6px 12px rgba(0, 0, 0, 0.2);
+}*/
+
+.highlighted {
+    color: orangered;
 }
 
-.mouse{
-    position:absolute;
-    top:300px;
-    left:50px;
-    width:200px;
+.header-image {
+    width: 100%;
+    display: block;
+}
+
+.mouse-image {
+    width: 20%;
+    display: block;
+    animation: moveImage 5s ease forwards;
+    margin-right: 15%;
+    float:right;
 }
 
 .body-container {
@@ -63,7 +80,9 @@ li {
 
 #EmailMessage {
     margin-left:20px;
+    font-size:larger;
 }
+
 
 
 /* Styles for screens that are at least 800px wide */
