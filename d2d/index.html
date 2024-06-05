@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="DOT-TO-DOTS">
+    <meta property="og:description" content="A JavaScript version of Connect-The-Dots.">
+    <meta property="og:url" content="https://www.DorkyDomains.com/d2d/index.html">
+
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+
+    <title>DOT-TO-DOTS</title>
+</head>
+<body onload="begin();">
+
+    <div class="container">
+
+        <table id="banner">
+            <tr>
+                <td id="player_one_score_container">0</td>
+                <td id="title">DOT-TO-DOTS</td>
+                <td id="player_two_score_container" class="score_container_off">
+                    0
+                </td>
+            </tr>
+        </table>
+
+        <table class="button_table">
+            <tr>
+                <td class="button_td" title="Next Game.">
+                    <div class="banner_button" onclick="location.reload();">>></div>
+                </td>
+                <td class="button_td" title="Come on dude, throw me a bone!">
+                    <div class="banner_button" onclick="location.href='https://paypal.me/wigiwiz';">$</div>
+                </td>
+                <td class="button_td" title="Display the Rules.">
+                    <div class="banner_button" id="rulesButton" onclick="showRules();">?</div>
+                </td>
+            </tr>
+
+        </table>
+
+        <div id="grid">
+        </div>
+
+        <ol id="rulesDiv">
+            <li>click a free line to select it.</li>
+            <li>complete a square to own it.</li>
+            <li>complete a square? go again.</li>
+            <li>you are blue. computer is red.</li>
+            <li>blue always goes first.</li>
+            <li>computer's move shows up red.</li>
+            <li>winner collects the most squares!</li>
+            <li>play again? refresh the page.</li>
+        </ol>
+
+    </div>
+
+
+
+
+</body>
+</html>
+
