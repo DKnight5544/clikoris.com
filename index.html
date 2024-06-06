@@ -21,45 +21,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
 
-    <script>
-
-        function begin() {
-            let name = getName();
-
-            let refby = document.getElementById("Refby");
-            let inner = refby.innerHTML;
-            refby.innerHTML = inner.replace("{Refby}", name);
-
-            let msg = document.getElementById("EmailTo");
-            let href = msg.href;
-            msg.href = href.replace("{Refby}", name);
-
-        }
-
-        function getName() {
-            let queryString = window.location.search;
-            let urlParams = new URLSearchParams(queryString).toString();
-            return urlParams.replace("=", "");
-        }
-
-    </script>
 
 </head>
 <body onload="begin();">
     <div class="container">
-        <img class="header-image" src="Header-Text-01.png" />
-        <img class="mouse-image" src="mouse01.png" />
+        <img class="header-image" src="Header-Text-02.png" />
+        <!--<img class="mouse-image" src="mouse01.png" />-->
         <p>
-            <b>For Sale: </b>clikoris.com - the funniest, most clickable,
+            <b>For Sale: </b>clikoris.com - the funniest, <i>most clickable</i>,
             domain name on the interwebs!
         </p>
         <p>
             <b>Price: </b><i>$100,000!</i>
         </p>
+        <p>
+            <b>What is a clikoris?</b>
+            It's the part of your body that does all the clicking! What were <i>you</i> thinking?
+        </p>
 
         <p>
-            <b>Foreplay:</b> Get a <i>spanking</i> new subdomain for <i>$40</i>, socialize it, and get <i>$20</i>
-            for each <i>quivering</i> new subdomain it generates.
+            <b>Foreplay:</b> Get a <i>spanking</i> new <i>Clikoris.com</i> subdomain for <i>$40</i>, socialize it, and get <i>$20</i>
+            for each <i>quivering</i> new  <i>Clikoris.com</i> subdomain it generates.
         </p>
 
         <p>
@@ -73,23 +55,14 @@
                 <li><i>pickled</i>.clikoris.com</li>
                 <li><i>hot</i>.clikoris.com</li>
                 <li><i>pink</i>.clikoris.com</li>
+                <li><i>fingered</i>.clikoris.com</li>
+                <li><i>freckled</i>.clikoris.com</li>
             </ul>
         </p>
 
         <p>
-            <b>Get started:</b> Email me now before someone else pulls <i>your</i>.clikoris.com!
-        </p>
-
-        <p>
-            <b>To:</b> <a id ="EmailTo" href="mailto:dave@mostlyspam.com?subject={Refby}.clikoris.com&body=Is ???.clikoris.com still available?">dave@mostlyspam.com</a>
-        </p>
-
-        <p id="Refby">
-            <b>Subject:</b> {Refby}.clikoris.com 
-        </p>
-
-        <p>
-            <b>Body:</b> Is <i>???</i>.clikoris.com still available?
+            <b>Order Now:</b> Before someone grabs you by <i>your.Clikoris.com!</i> Forward your invitation text to 503-975-5544,
+            and I'll get you set up!
         </p>
 
     </div>
